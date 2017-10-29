@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Abril Fatface', cursive;
+}
+
+p, ul , dl {
+	font-family: 'Crimson Text', serif;
+}
+
+html, body, .containter-fluid {
+	background-color: rgb(230, 230, 230);
+}
+
+.jumbotron {
+	text-align: center;
+	border-radius: 0;
+	background-color: rgb(244, 222, 181);
+}
+
+#sidebar {
+	background-color: rgb(144, 187, 144);
+	min-height: 100vh;
+}
+
+#sidebar dt {
+	font-size: 1.3em;
+}
+
+#sidebar dd {
+	font-size: 1.2em;
+}
+
+#sidebar dt {
+	margin-bottom: 5px;
+	color: rgb(244, 222, 181);
+}
+
+#sidebar dd {
+	margin-bottom: 3px;
+	color: rgb(255, 255, 255);
+}
+
+#sidebar dd:nth-child(4) {
+	color: blue;
+}
+
+#sidebar dd a {
+	color: blue;
+}
+
+#maincontent {
+	padding: 50px;
+}
+
+#maincontent p {
+	font-size: 1.3em;
+}
+
+#maincontent ul {
+	list-style-type: decimal;
+	font-size: 1.3em;
+}
