@@ -10,7 +10,7 @@ This is the third school project that is basically a PingPong game. The game has
 
 ## Setup/Installation Requirements
 
-Load the page at ().
+Load the page at (https://williz4.github.io/ping-pong/).
 Input a random number in your form, and submit it.
 Get the results back.
 
