@@ -20,7 +20,8 @@
  		<!--Custom Styling-->
  		<link rel="stylesheet" href="css/styles.css">
  		<!--Google Fonts-->
- 		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet"
  		<!--Animate CSS CDN-->
  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
 
@@ -28,15 +29,15 @@
 
 	<body>
 
+		<header class="jumbotron"> <h1>Ping Pong</h1> </header>
+
 		<div class="container-fluid">
-			
-			<div class="jumbotron">Ping Pong</div>
 
 			<div class="row">
 
 				<div class="col-sm-3" id="sidebar">
 
-					<h1>About Ping Pong</h1>
+					<h2>About Ping Pong</h2>
 
 					<dl>
 						
@@ -44,7 +45,7 @@
 							<dd>Wilson Mwangeka</dd>
 
 						<dt>Github Username/URL:</dt>
-							<dd>Williz4</dd>
+							<dd>Williz4 / (<a href="https://github.com/Williz4" target="_blank">Github Link</a>)</dd>
 
 						<dt>Level 2 Test For:</dt>
 							<dd>Java</dd>
@@ -58,8 +59,10 @@
 
 					<hgroup>
 
-						<h1>Lets Play!</h1>
-						<h2>Rules</h2>
+						<h2>Lets Play!</h2>
+						<h3>Rules:</h3>
+
+					</hgroup>
 
 						<article>	
 
@@ -70,18 +73,26 @@
 								<li>Numbers divisible by 3 and 5 become "pingpong"</li>
 							</ul>
 
-							<form class="form-inline" method="post" action="#">
+							<form class="form-inline" id="ping">
+							  <label class="sr-only" for="input-no">Enter Your Number Here:</label>
+							  <input type="text" class="form-control" id="input-no" placeholder="Enter Your Number">
 
-							  <label class="sr-only" for="inlineFormInputName2">Name</label>
-							  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Enter Your Number">
-
-							  <button type="submit" class="btn btn-primary">Submit</button>
+							  <button type="submit" class="btn btn-primary" onclick="test($('#ping-pong').val())">Find out!</button>
 
 							</form>
 
 						</article>
 
-					</hgroup>
+						<article id="result">
+
+							<p><strong>Here's your result: </strong></p>
+       			 	<span id="pinglist"></span>
+          		<ul>
+
+          		</ul>
+
+
+						</article>
 
 				</div>
 

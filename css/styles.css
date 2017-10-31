@@ -64,3 +64,17 @@ html, body, .containter-fluid {
 	list-style-type: decimal;
 	font-size: 1.3em;
 }
+
+form .btn-primary {
+	border-radius: 0;
+}
+
+#result {
+	display: none;
+}
+
+#results {
+	font-family: 'Crimson Text', serif;
+	font-size: 1.3em;
+	color: red;
+}
